@@ -1,29 +1,68 @@
 <!doctype html>
 <html>
-  <body style="margin:0; padding:0; background-color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:24px;">
-    <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
+  <!-- Plantilla de email: conservar estilos inline para compat. clientes de correo -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Media query: pequeñas sobrescrituras para móvil -->
+    <style type="text/css">
+      @media only screen and (max-width: 600px) {
+        .wrapper, .container {
+          width: 100% !important;
+          min-width: 100% !important;
+          margin: 0 auto !important;
+        }
+        .wrapper td {
+          text-align: center !important;
+        }
+        .stack {
+          display: block !important;
+          width: 100% !important;
+          max-width: 100% !important;
+          box-sizing: border-box !important;
+          padding-left: 15px !important;
+          padding-right: 15px !important;
+        }
+        .stack p {
+          word-wrap: break-word !important;
+          overflow-wrap: break-word !important;
+        }
+        .fluid {
+          width: 100% !important;
+          max-width: 100% !important;
+          height: auto !important;
+        }
+        .center-on-mobile {
+          text-align: center !important;
+        }
+      }
+    </style>
+  </head>
+  <body id="top" style="margin:0; padding:0; background-color:#ffffff; font-family:Arial, Helvetica, sans-serif; font-size:16px; line-height:24px;">
+    <table class="wrapper" width="100%" cellpadding="0" cellspacing="0" style="background-color:#ffffff;">
       <tr>
         <td align="center" style="padding:0;">
 
-          <table width="600px" style="width:100%; max-width:600px; background-color:#ffffff;" cellpadding="0" cellspacing="0">
+          <table class="container" width="600px" align="center" style="width:100%; max-width:600px; margin:0 auto; background-color:#ffffff;" cellpadding="0" cellspacing="0">
 
             <tr>
+              <!-- Header -->
               <td align="center" style="background-color:#F1F1F1;">
                 <table width="100%" cellpadding="0" cellspacing="0">
                   <tr>
                     <td align="center">
-                      <img src="EV_News_Nota-Carga-Regenerativa_V5_01.png" alt="Logo de Chevrolet" style="display:block; max-width:100%; height:auto; border:0;">
+                      <img class="fluid" src="EV_News_Nota-Carga-Regenerativa_V5_01.png" alt="Logo de Chevrolet" style="display:block; max-width:100%; height:auto; border:0;">
                     </td>
                   </tr>
                 </table>
               </td>
             </tr>
             <tr>
+              <!-- Body -->
               <td style="padding:0;">
                 <table width="100%" align="center" style="max-width: 600px; margin:0 auto;" cellpadding="0" cellspacing="0" vertical-align: top; margin:0 auto;>
                   <tr>
                     <td>
-                      <img src="MH-TP4-Onix.png" width="100%" alt="Onix 2025" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
+                      <img class="fluid" src="MH-TP4-Onix.png" width="100%" alt="Onix 2025" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
                     </td>
                   </tr>
 
@@ -37,11 +76,11 @@
                     <td>
                       <table width="100%" cellpadding="0" cellspacing="0" style="background-color:#F1F1F1; max-width:600px;">
                         <tr>
-                          <td width="50%" style="padding-right:10px; vertical-align:top;">
-                            <img src="Chevrolet_NL_Built-In_L&F_V3_05 (1).png" width="100%" alt="Volante_chevloret" style="display:block; width:100%; max-width:280px; height:auto; border:0;">
+                          <td class="stack" width="50%" style="padding-right:10px; vertical-align:top;">
+                            <img class="fluid" src="Chevrolet_NL_Built-In_L&F_V3_05 (1).png" width="100%" alt="Volante Chevrolet" style="display:block; width:100%; max-width:280px; height:auto; border:0;">
                           </td>
-                          <td width="50%" style=" font-family: Arial, Helvetica, sans-serif; text-align: left; padding: 10px 18px 10px 10px;">
-                            <p style="margin:0; font-size: 18px;">Trabajamos para que la innovación y la conectividad sean pilares de nuestros vehículos, por ello <strong></strong><a href="https://ejemplo.com" style="color: #009dff; text-decoration: underline; font-weight: bold;">lo mejor del portafolio de Chevrolet&sup1;</a> integra Google Built-In, una tecnología integrada directamente en tu vehículo que transforma tu experiencia al volante.</p>
+                          <td class="stack" width="50%" style=" font-family: Arial, Helvetica, sans-serif; text-align: left; padding: 10px 21px 10px 10px;">
+                            <p style="margin:0; font-size: 18px;">Trabajamos para que la innovación y la conectividad sean pilares de nuestros vehículos, por ello <strong></strong><a href="#top" style="color: #009dff; text-decoration: underline; font-weight: bold;">lo mejor del portafolio de Chevrolet&sup1;</a> integra Google Built-In, una tecnología integrada directamente en tu vehículo que transforma tu experiencia al volante.</p>
                           </td>
                         </tr>
                       </table>
@@ -50,13 +89,13 @@
 
                   <tr>
                     <td>
-                      <img src="CNF_CHE_EV-News-TP4_Sept_V2_07.png" width="600" alt="80_por_ciento_de_cargas_se_hacen_en_casa" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
+                      <img class="fluid" src="CNF_CHE_EV-News-TP4_Sept_V2_07.png" width="600" alt="80% de las cargas se realizan en casa" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
                     </td>
                   </tr>
 
                   <tr>
                     <td>
-                      <table width="100%" cellpadding="0" cellspacing="0" align="center" style="max-width: 600px;" cellpadding="0" cellspacing="0">
+                      <table width="100%" cellpadding="0" cellspacing="0" align="center" style="max-width: 600px;">
                         <tr>
                           <td  align="center" style="padding: 40px 0px 0px; font-family: Arial, Helvetica, sans-serif; text-align: center;">
                             <p style="font-size:30px;"><strong>Despierta con energía cada mañana</strong></p>
@@ -103,10 +142,10 @@
                           <td>
                             <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="max-width: 600px;">
                               <tr>
-                                <td width="50%" valign="top">
-                                  <img src="CNF_CHE_EV-News-TP4_Sept_V2_11.png" width="100%" alt="estacion_de_carga" style="width:100%; display:block;">
+                                <td class="stack" width="50%" valign="top">
+                                  <img class="fluid" src="CNF_CHE_EV-News-TP4_Sept_V2_11.png" width="100%" alt="Estacion de carga" style="width:100%; display:block;">
                                 </td>
-                                <td width="50%" valign="top" style="vertical-align: top; font-size: 21px; font-family: Arial, Helvetica, sans-serif; text-align: left; padding: 0px 15px 0px 40px;">
+                                <td class="stack" width="50%" valign="top" style="vertical-align: top; font-size: 21px; font-family: Arial, Helvetica, sans-serif; text-align: left; padding: 0px 15px 0px 40px;">
                                   <p style="margin-top: 0;">Una estación de recarga para los <strong>autos eléctricos</strong> e <strong>híbridos enchufables</strong> que puede instalarse en tu casa.</p>
                                 </td>
                               </tr>
@@ -132,12 +171,15 @@
                           <td>
                             <table width="100%" align="center" cellpadding="0" cellspacing="0" style="max-width: 600px;">
                               <tr>
-                                <td width="50%" style="vertical-align: top; font-size: 21px; font-family: Arial, Helvetica, sans-serif; text-align: left; padding: 0px 25px 0px 40px;">
+                                <td class="stack" width="50%" style="vertical-align: top; font-size: 21px; font-family: Arial, Helvetica, sans-serif; text-align: left; padding: 0px 25px 0px 40px;">
                                   <p style="margin:0; margin-top: 0px; vertical-align:top; ">Al momento de adquirir tu <strong>Spark EUV, Equinox EV</strong> o <strong>Blazer EV</strong> recibirás un cargador <strong style="color: #009dff; ">nivel 2 (AC)</strong> y el servicio de instalación residencial por personal especializado&sup2;.</p>
                                 </td>
-                                <td width="50%" align="center" style="vertical-align: top;">
-                                  <img src="CNF_CHE_EV-News-TP4_Sept_V2_16.png" width="100%" alt="boton_saber_mas" style=" width: 230px; max-width:100%; height:auto; display:block;">
-                                  <img src="CNF_CHE_EV-News-TP4_Sept_V2_17.png" width="100%" alt="boton_saber_mas_2" style="width: 230px; max-width:100%; height:auto; display:block;">
+                                <td class="stack" width="50%" align="center" style="vertical-align: top;">
+                                  
+                                  <img class="fluid" src="CNF_CHE_EV-News-TP4_Sept_V2_16.png" width="100%" alt="Botón Saber más" style=" width: 230px; max-width:100%; height:auto; display:block;">
+                                  <a href="#top">
+                                    <img class="fluid" src="CNF_CHE_EV-News-TP4_Sept_V2_17.png" width="100%" alt="Cargador" style="width: 230px; max-width:100%; height:auto; display:block;">
+                                  </a>
                                 </td>
                               </tr>
                             </table>
@@ -149,19 +191,21 @@
 
                   <tr>
                     <td>
-                      <img src="CNF_CHE_EV-News-TP4_Sept_V2_18.png" width="600" alt="pasos_para_conectar_cargador" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
+                      <img class="fluid" src="CNF_CHE_EV-News-TP4_Sept_V2_18.png" width="600" alt="Pasos para conectar el cargador" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
                     </td>
                   </tr>
 
                   <tr>
                     <td>
-                      <img src="CNF_CHE_EV-News-TP4_Sept_V2_19.png" width="600" alt="cargador_2_es_carga_rapida" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
+                      <img class="fluid" src="CNF_CHE_EV-News-TP4_Sept_V2_19.png" width="600" alt="Cargador nivel 2 (AC) carga mas rapido" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
                     </td>
                   </tr>
 
                   <tr>
                     <td>
-                      <img src="CNF_CHE_EV-News-TP4_Sept_V2_20.png" width="600" alt="saber_mas_2" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
+                        <a href="#top">
+                          <img class="fluid" src="CNF_CHE_EV-News-TP4_Sept_V2_20.png" width="600" alt="Saber mas" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
+                        </a>
                     </td>
                   </tr>
 
@@ -177,7 +221,7 @@
 
                   <tr>
                     <td  style="padding:40px;">
-                      <img src="CNF_CHE_EV-News-TP4_Sept_V2_23.png" width="600" alt="versatilidad" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
+                      <img class="fluid" src="CNF_CHE_EV-News-TP4_Sept_V2_23.png" width="600" alt="Versatilidad" style="display:block; width:100%; max-width:600px; height:auto; border:0;">
                     </td>
                   </tr>
 
@@ -186,11 +230,12 @@
             </tr>
 
             <tr>
+              <!-- Footer-->
               <td style="padding:0; margin:0; vertical-align: top;">
                 <table width="100%" style="width:100%; max-width:600px; background-color:#F1F1F1; padding-bottom:40px; vertical-align: top; margin:0 auto;" cellpadding="0" cellspacing="0" align="center">
                   <tr>
                     <td>
-                      <img src="CNF_CHE_EV-News-TP4_Sept_V2_29.png" width="100%" alt="together_lets_drive" style="width:100%; max-width:600px; margin:0 auto; height:auto; border:0; ">
+                      <img class="fluid" src="CNF_CHE_EV-News-TP4_Sept_V2_29.png" width="100%" alt="Together, let's drive" style="width:100%; max-width:600px; margin:0 auto; height:auto; border:0; ">
                     </td>
                   </tr>
 
@@ -200,26 +245,8 @@
                       <table width="350px" cellpadding="0" cellspacing="0" border="0" align="center" style="width: 350px; margin:0 auto;">
                         <tr>
                           <td align="center" width="55" style="width:55px;">
-                            <a href="https://linkedin.com" target="_blank">
-                              <img src="CNF_CHE_EV-News-TP4_Sept_V2_31.png"
-                                  width="50px"
-                                  alt="LinkedIn"
-                                  style="display:block; width:50px; max-width:50px; height:auto; border:0;">
-                            </a>
-                          </td>
-
-                          <td align="center" width="55" style="width:55px;">
-                            <a href="https://instagram.com" target="_blank" style="text-decoration:none;">
-                              <img src="CNF_CHE_EV-News-TP4_Sept_V2_33.png"
-                                  width="50px"
-                                  alt="Instagram"
-                                  style="display:block; width:50px; max-width:50px; height:auto; border:0;">
-                            </a>
-                          </td>
-
-                          <td align="center" width="55" style="width: 55px;">
-                            <a href="https://facebook.com" target="_blank" style="text-decoration:none;">
-                              <img src="CNF_CHE_EV-News-TP4_Sept_V2_35.png"
+                            <a href="https://facebook.com" target="_blank">
+                              <img class="fluid" src="CNF_CHE_EV-News-TP4_Sept_V2_31.png"
                                   width="50px"
                                   alt="Facebook"
                                   style="display:block; width:50px; max-width:50px; height:auto; border:0;">
@@ -227,10 +254,28 @@
                           </td>
 
                           <td align="center" width="55" style="width:55px;">
-                            <a href="https://linkedin.com" target="_blank" style="text-decoration:none;">
-                              <img src="CNF_CHE_EV-News-TP4_Sept_V2_37.png"
+                            <a href="https://youtube.com" target="_blank" style="text-decoration:none;">
+                              <img class="fluid" src="CNF_CHE_EV-News-TP4_Sept_V2_33.png"
+                                  width="50px"
+                                  alt="Youtube"
+                                  style="display:block; width:50px; max-width:50px; height:auto; border:0;">
+                            </a>
+                          </td>
+
+                          <td align="center" width="55" style="width: 55px;">
+                            <a href="https://instagram.com" target="_blank" style="text-decoration:none;">
+                              <img class="fluid" src="CNF_CHE_EV-News-TP4_Sept_V2_35.png"
+                                  width="50px"
+                                  alt="Instagram"
+                                  style="display:block; width:50px; max-width:50px; height:auto; border:0;">
+                            </a>
+                          </td>
+
+                          <td align="center" width="55" style="width:55px;">
+                            <a href="https://tiktok.com" target="_blank" style="text-decoration:none;">
+                              <img class="fluid" src="CNF_CHE_EV-News-TP4_Sept_V2_37.png"
                                   width="50"
-                                  alt="LinkedIn"
+                                  alt="TikTok"
                                   style="display:block; width:50px; max-width:50px; height:auto; border:0;">
                             </a>
                           </td>
